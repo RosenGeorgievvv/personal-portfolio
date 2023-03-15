@@ -1,0 +1,29 @@
+body {
+ background-image: url('img/background-image.jpg');
+ background-repeat: no-repeat;
+ background-size: cover;
+}
+.container {
+  height: 6vh;
+  padding: 1px;
+  text-align: center;
+}
+.horizontal-list {
+  list-style: none;
+}
+.horizontal-list li,
+a {
+  display: inline-block;
+  font-size: 1.5rem;
+  margin-left: 15px;
+  text-decoration: none;
+  color: white;
+  cursor: pointer;
+  
+  
+  
+}
+.about {
+  border: 1px solid black;
+  height: 10vh;
+}
