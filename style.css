@@ -12,7 +12,8 @@ body {
   list-style: none;
 }
 .horizontal-list li>a:hover{
-    color: lightgreen;
+    color: rgb(0, 214, 252);
+    transform: scale(1.2);  
 }
 .horizontal-list li,
 a {
@@ -24,8 +25,21 @@ a {
   cursor: pointer;
   
 }
-
-.about {
+.home {
   border: 1px solid black;
-  height: 10vh;
+  height: 90.5vh;
 }
+.home h1{
+    font-size: 2rem;
+    height: auto;
+    color:white;
+    text-align: center;
+    align-items: center;
+}
+.image{
+    text-align: right;
+    height: auto;
+    margin-right: 250px;
+    margin-top: 150px;
+}
+     
