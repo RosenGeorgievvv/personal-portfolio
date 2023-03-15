@@ -1,19 +1,19 @@
 body {
- background-image: url('img/background-image.jpg');
- background-repeat: no-repeat;
- background-size: cover;
+  background-image: url("img/background-image.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 .container {
   height: 6vh;
-  padding: 1px;
   text-align: center;
 }
 .horizontal-list {
   list-style: none;
+  padding: 1rem;
 }
-.horizontal-list li>a:hover{
-    color: rgb(0, 214, 252);
-    transform: scale(1.2);  
+.horizontal-list li > a:hover {
+  color: rgb(0, 214, 252);
+  transform: scale(1.2);
 }
 .horizontal-list li,
 a {
@@ -23,23 +23,31 @@ a {
   text-decoration: none;
   color: white;
   cursor: pointer;
-  
 }
 .home {
   border: 1px solid black;
   height: 90.5vh;
 }
-.home h1{
-    font-size: 2rem;
-    height: auto;
-    color:white;
-    text-align: center;
-    align-items: center;
+.home h1 {
+  font-size: 3rem;
+  height: auto;
+  color: white;
+  text-align: center;
+  align-items: center;
+  display: inline-block;
+  margin-left: 300px;
+  margin-top: 250px;
 }
-.image{
-    text-align: right;
-    height: auto;
-    margin-right: 250px;
-    margin-top: 150px;
+.home h2 {
+  display: inline-block;
+  color: white;
+  margin-left: 300px;
+  font-size: 3rem;
 }
-     
+.image {
+  text-align: right;
+  height: auto;
+  margin-right: 250px;
+  margin-top: 150px;
+  overflow: hidden;
+}
