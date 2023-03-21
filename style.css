@@ -1,5 +1,5 @@
 body {
-  background-image: url("img/background-image.jpg");
+  background-image: url("img/pic3.webp");
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -11,10 +11,7 @@ body {
   list-style: none;
   padding: 1rem;
 }
-.horizontal-list li > a:hover {
-  color: rgb(0, 214, 252);
-  transform: scale(1.2);
-}
+
 .horizontal-list li,
 a {
   display: inline-block;
@@ -23,31 +20,65 @@ a {
   text-decoration: none;
   color: white;
   cursor: pointer;
+  transition: color 0.5s ease
 }
-.home {
-  border: 1px solid black;
-  height: 90.5vh;
+.horizontal-list li > a:hover {
+  color: rgb(0, 0, 0);
+  transform: scale(1.2);
 }
-.home h1 {
-  font-size: 3rem;
-  height: auto;
-  color: white;
-  text-align: center;
+
+#home {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
   align-items: center;
-  display: inline-block;
-  margin-left: 300px;
-  margin-top: 250px;
+  padding: 100px 20px;
 }
-.home h2 {
-  display: inline-block;
+.intro {
+  flex-basis: 50%;
+  max-width: 500px;
+  margin-left:250px;
+}
+
+.intro h1 {
+  font-size: 48px;
+  margin-bottom: 20px;
+  color:white;
+}
+
+.intro p {
+  font-size: 24px;
+  line-height: 1.5;
+  margin-bottom: 40px;
   color: white;
-  margin-left: 300px;
-  font-size: 3rem;
 }
-.image {
-  text-align: right;
-  height: auto;
-  margin-right: 250px;
-  margin-top: 150px;
-  overflow: hidden;
+
+.cta-button {
+  display: inline-block;
+  background-color: #ffffff;
+  color: black;
+  padding: 12px 20px;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background-color 1s ease;
+}
+.cta-button:hover {
+  background-color: rgb(250, 226, 131);;
+  color:black;
+}
+.profile-picture {
+  flex-basis: 40%;
+  max-width: 600px;
+  text-align: center;
+  margin-right: 120px;
+}
+.profile-picture img {
+  width: 65%;
+  border-radius: 50%;
+  
+}
+.footer{
+  display: block;
+  font-size: 1.5rem;
 }
