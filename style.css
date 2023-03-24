@@ -20,14 +20,14 @@ a {
   text-decoration: none;
   color: rgba(255, 255, 255, 0.842);
   cursor: pointer;
-  transition: color 0.5s ease
+  transition: color 0.5s ease;
 }
 .horizontal-list li > a:hover {
   color: rgb(0, 0, 0);
   transform: scale(1.2);
 }
 
-#home {
+#home-section {
   width: 100%;
   height: 100vh;
   display: flex;
@@ -39,20 +39,20 @@ a {
 .intro {
   flex-basis: 50%;
   max-width: 500px;
-  margin-left:250px;
+  margin-left: 250px;
 }
 
 .intro h1 {
   font-size: 48px;
   margin-bottom: 20px;
-  color:rgba(255, 255, 255, 0.842)
+  color: rgba(255, 255, 255, 0.842);
 }
 
 .intro p {
   font-size: 24px;
   line-height: 1.5;
   margin-bottom: 40px;
-  color: rgba(255, 255, 255, 0.842)
+  color: rgba(255, 255, 255, 0.842);
 }
 
 .cta-button {
@@ -67,7 +67,7 @@ a {
 }
 .cta-button:hover {
   background-color: rgb(39, 39, 39);
-  color:rgba(255, 255, 255, 0.842);;
+  color: rgba(255, 255, 255, 0.842);
 }
 .profile-picture {
   flex-basis: 40%;
@@ -79,36 +79,93 @@ a {
   width: 65%;
   border-radius: 50%;
 }
-#about{
-width: 100%;
-height: 50vh;
+#about-section {
+  width: 100%;
+  height: 50vh;
 }
-#about h1{
+#about-section h1 {
   margin-bottom: 40px;
   justify-content: center;
   text-align: center;
   font-size: 50px;
-  color:rgba(255, 255, 255, 0.842);
+  color: rgba(255, 255, 255, 0.842);
 }
-#about p{
+#about-section p {
   width: 1500px;
-  margin:auto;
+  margin: auto;
   font-size: 22px;
   text-align: center;
-  color:rgba(255, 255, 255, 0.842);
+  color: rgba(255, 255, 255, 0.842);
 }
-#skills{
-width: 100%;
-height: 100vh;
+#skills-section {
+  width: 100%;
+  height:100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
-.details h1{
+#skills-section h1 {
   margin-bottom: 40px;
   justify-content: center;
   text-align: center;
   font-size: 50px;
-  color:rgba(255, 255, 255, 0.842);
+  color: rgba(255, 255, 255, 0.842);
 }
-.footer{
+.skills{
+  width: 100%;
+  max-width: 1000px;
+  padding: 0 40px;
+}
+.skill-name{
+  font-size: 18px;
+  font-weight: 700;
+  color: rgba(255, 255, 255, 0.842);
+  text-transform: uppercase;
+  margin: 15px 0;
+}
+.skill-bar{
+  height: 16px;
+  background: #504f4f;
+  border-radius: 3px;
+}
+.skill-per{
+  height: 14px;
+  background: #d13639;
+  border-radius: 3px;
+  position: relative;
+  animation: fillBars 2.5s 1;
+}
+.skill-per::before{
+  content: attr(per);
+  position: absolute;
+  padding: 4px 6px;
+  background: rgb(255, 255, 255);
+  border-radius: 4px;
+  font-size: 12px;
+  top: -40px;
+  right: 0;
+  transform: translateX(50%);
+}
+.skill-per::after{
+  content: "";
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  background: rgb(255, 255, 255);
+  top:-20px;
+  right: 0;
+  transform: translateX(50%) rotate(45deg);
+  border-radius: 2px;
+}
+@keyframes fillBars{
+  from{
+    width: 0;
+  }
+  to{
+    width: 100%;
+  }
+}
+.footer {
   display: block;
   font-size: 1.5rem;
 }
