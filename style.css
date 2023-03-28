@@ -1,28 +1,41 @@
+html{
+  scroll-behavior: smooth;
+}
 body {
   background-image: url("img/cool.jpg");
   background-repeat: no-repeat;
   background-size: cover;
+  margin: 0;
 }
-.container {
-  height: 6vh;
-  text-align: center;
+.container{
+  width: auto;
+  height: 6vh; 
+  position: flex;
+  width: auto;
+  
 }
 .horizontal-list {
-  list-style: none;
   padding: 1rem;
+  position: fixed;
+  border: 1px solid black;
+  overflow: hidden;
+  width: 100%; 
+  -webkit-backdrop-filter: blur(8px);
+  backdrop-filter: blur(8px);
 }
 
-.horizontal-list li,
-a {
-  display: inline-block;
+.horizontal-list a {
+  display: block;
+  float:left;
   font-size: 1.5rem;
-  margin-left: 15px;
+  margin-left: 20px;
   text-decoration: none;
+  text-align: center;
   color: rgba(255, 255, 255, 0.842);
   cursor: pointer;
   transition: color 0.5s ease;
 }
-.horizontal-list li > a:hover {
+.horizontal-list > a:hover {
   color: rgb(0, 0, 0);
   transform: scale(1.2);
 }
@@ -99,7 +112,7 @@ a {
 }
 #skills-section {
   width: 100%;
-  height:80vh;
+  height: 80vh;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -111,31 +124,31 @@ a {
   font-size: 50px;
   color: rgb(255, 255, 255);
 }
-.skills{
+.skills {
   width: 100%;
   max-width: 1000px;
   padding: 0 40px;
 }
-.skill-name{
+.skill-name {
   font-size: 18px;
   font-weight: 700;
   color: rgb(205, 205, 205);
   text-transform: uppercase;
   margin: 15px 0;
 }
-.skill-bar{
+.skill-bar {
   height: 16px;
   background: #504f4f;
   border-radius: 3px;
 }
-.skill-per{
+.skill-per {
   height: 14px;
   background: #d13639;
   border-radius: 3px;
   position: relative;
   animation: fillBars 2.5s 1;
 }
-.skill-per::before{
+.skill-per::before {
   content: attr(per);
   position: absolute;
   padding: 4px 6px;
@@ -146,41 +159,41 @@ a {
   right: 0;
   transform: translateX(50%);
 }
-.skill-per::after{
+.skill-per::after {
   content: "";
   position: absolute;
   width: 10px;
   height: 10px;
   background: rgb(255, 255, 255);
-  top:-20px;
+  top: -20px;
   right: 0;
   transform: translateX(50%) rotate(45deg);
   border-radius: 2px;
 }
-@keyframes fillBars{
-  from{
+@keyframes fillBars {
+  from {
     width: 0;
   }
-  to{
+  to {
     width: 100%;
   }
 }
-#contact{
-width: 100%;
-height: 20vh;
-text-align: center;
+#contact-section {
+  width: 100%;
+  height: 20vh;
+  text-align: center;
 }
-#contact a{
+#contact-section a {
   display: inline-block;
   font-size: 30px;
   color: white;
   font-weight: bold;
   margin: 100px 30px;
 }
-#contact a:hover{
+#contact-section a:hover {
   transform: scale(1.5);
   transition: 0.5s ease;
-  color:rgb(29, 201, 239);
+  color: rgb(29, 201, 239);
   cursor: pointer;
 }
 .footer {
